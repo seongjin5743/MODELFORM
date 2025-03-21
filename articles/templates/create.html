@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<!-- 자기 자신을 호출할 때는 action에 아무것도 안 써도 된다 -->
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit">
+</form>
+    
+{% endblock %}
